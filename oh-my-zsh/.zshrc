@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/stillya/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -75,6 +75,7 @@ git
 docker
 zsh-syntax-highlighting
 sudo
+zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -104,3 +105,26 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+# JOHN THE RIPPER
+
+export PATH=$PATH:/opt/homebrew/Cellar/john-jumbo/1.9.0/share/john
+
+# GRADLE
+
+export PATH=$PATH:$HOME/.gradle/wrapper/dists/gradle-6.9-bin/2ecsmyp3bolyybemj56vfn4mt/gradle-6.9/bin
+
+# POETRY
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+# ALIASES
+
+alias pip=pip3
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
