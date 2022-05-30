@@ -1,0 +1,12 @@
+-Xms4096m
+-Xmx10240m
+-XX:NewRatio=2
+-Dsun.io.useCanonCaches=false
+-XX:MaxGCPauseMillis=100
+-XX:+PerfDisableSharedMem
+-XX:+UseCompressedOops
+-Djava.net.preferIPv4Stack=true
+-Dkotlinx.coroutines.debug=off
+-XX:SoftRefLRUPolicyMSPerMB=50
+-Dsun.awt.mac.a11y.enabled=false
+-XX:TieredStopAtLevel=1
