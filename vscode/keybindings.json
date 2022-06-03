@@ -582,11 +582,11 @@
     },
     {
         "command": "workbench.action.nextEditor",
-        "key": "ctrl+]"
+        "key": "ctrl+[ArrowRight]"
     },
     {
         "command": "editor.action.organizeImports",
-        "key": "cmd+shift+l",
+        "key": "ctrl+alt+o",
         "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
     },
     {
@@ -610,7 +610,7 @@
     },
     {
         "command": "workbench.action.previousEditor",
-        "key": "ctrl+["
+        "key": "ctrl+[ArrowLeft]"
     },
     {
         "command": "workbench.action.selectTheme",
@@ -879,19 +879,19 @@
         "key": "cmd+k o"
     },
     {
-        "command": "acceptSelectedSuggestion",
+        "command": "-acceptSelectedSuggestion",
         "key": "tab"
     },
     {
-        "command": "acceptSelectedSuggestion",
+        "command": "-acceptSelectedSuggestion",
         "key": "enter"
     },
     {
-        "command": "acceptAlternativeSelectedSuggestion",
+        "command": "-acceptAlternativeSelectedSuggestion",
         "key": "shift+tab"
     },
     {
-        "command": "acceptAlternativeSelectedSuggestion",
+        "command": "-acceptAlternativeSelectedSuggestion",
         "key": "shift+enter"
     },
     {
@@ -971,8 +971,8 @@
         "key": "shift+alt+left"
     },
     {
-        "command": "editor.action.smartSelect.grow",
-        "key": "cmd+w"
+        "command": "-editor.action.smartSelect.grow",
+        "key": ""
     },
     {
         "command": "-lineBreakInsert",
@@ -1111,12 +1111,12 @@
         "key": ""
     },
     {
-        "command": "workbench.action.nextEditor",
-        "key": "ctrl+[ArrowLeft]"
+        "command": "-workbench.action.nextEditor",
+        "key": "shift+cmd+]"
     },
     {
-        "command": "workbench.action.previousEditor",
-        "key": "ctrl+["
+        "command": "-workbench.action.nextEditor",
+        "key": "alt+cmd+right"
     },
     {
         "command": "-editor.action.organizeImports",
@@ -1263,7 +1263,41 @@
         "key": "shift+alt+f3"
     },
     {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
         "key": "ctrl+tab",
-        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "cmd+w",
+        "command": "editor.action.smartSelect.grow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+'",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "cmd+'",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+cmd+'",
+        "command": "workbench.action.terminal.kill"
     }
 ]
