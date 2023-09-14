@@ -76,6 +76,7 @@ docker
 zsh-syntax-highlighting
 sudo
 zsh-autosuggestions
+kubectl-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
