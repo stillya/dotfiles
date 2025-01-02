@@ -1,0 +1,4 @@
+font-family = "JetBrains Mono"
+font-size = 13
+shell-integration = zsh
+keybind = cmd+backspace=text:\x15
