@@ -124,4 +124,10 @@
       "cmd-k cmd-s": "workspace::SaveAs",
     },
   },
+  {
+    "context": "(Editor && !edit_prediction)",
+    "bindings": {
+      "alt-'": "editor::ShowEditPrediction"
+    }
+  }
 ]

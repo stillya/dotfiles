@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "icon_theme": "JetBrains Icons Dark",
   "format_on_save": "off",
   "edit_predictions": {
     "mode": "eager",
@@ -18,20 +19,20 @@
     "enabled_in_text_threads": false
   },
   "agent": {
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
-    },
+    "enabled": false,
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "zed"
   },
+  "show_edit_predictions": false,
   "collaboration_panel": {
     "button": false,
     "dock": "left"
   },
   "ui_font_size": 15,
-  "ui_font_family": "Zed Plex Sans",
+  "ui_font_family": ".ZedSans",
   "buffer_font_size": 13,
-  "buffer_font_family": "JetBrains Mono"
+  "buffer_font_family": "JetBrains Mono",
+  "show_completions_on_input": false
+
 }
